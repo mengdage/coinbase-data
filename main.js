@@ -51,7 +51,7 @@ async function main() {
   }, 0)
   // const coinDetails = details.filter(d => d.paymentMethodType === UNKNOW_PAYMENT_TYPE)
 
-  console.log(JSON.stringify(bankDetails, null, 2))
+  console.log(JSON.stringify(bankDetails.reverse(), null, 2))
 
   console.log(`Transactions #${deposits.length}`)
   console.log(`Bank Deposits: $${totalBankDeposits}`)
